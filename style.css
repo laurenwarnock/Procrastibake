@@ -1,0 +1,465 @@
+/* Author: Lauren Warnock
+Date: 22 May 2024
+*/
+
+/*
+COLOURS
+Background Colour (Body): #fff9f9 (Very Pale Pink)
+Text Colour (Body): #211d1c (Black)
+Navigation Link Text Colour: #333 (Dark Grey)
+Background Colour (Navigation Links): #ffcce6 (Light Pink)
+Background Colour (Header): #ff69b4 (Hot Pink)
+Text Colour (Header): #ff69b4 (Hot Pink)
+Text Colour (Breadcrumb): #ff69b4 (Hot Pink)
+Separator Colour (Breadcrumb): #ffb3d9 (Light Pink)
+Active Page Text Colour (Breadcrumb): #ffb3d9 (Light Pink)
+Background Colour (Footer): #ffcce6 (Light Pink)
+Text Colour (Footer): white
+*/
+
+/* I haven't done much referencing because I combined the class tutorials, W3 Schools, Chat GBT and Claude for all of this. For each section I used at least two of these. */
+
+/*GLOBAL SETTING
+----------------------------------------
+*/
+
+body {
+    background-color: #fff9f9;
+    font-size: 20px;
+	font-weight: 300;
+	font-family: 'Open Sans', sans-serif;
+	color: #211d1c;
+	margin: 0;
+}
+
+
+#wrapper {
+	position: relative;
+	max-width: 1200px; 
+	width: 90%;
+    margin: 0 auto;
+}
+
+h1 {
+	font-size: 3em;
+	font-weight: 700;
+}
+
+h1.sub-heading {
+    font-size: 2.2em; 
+    font-weight: 700;
+    font-family: 'Pacifico', cursive;
+    color: #ffb3d9;
+    margin-top: 0px; /* Move closer to the nav bar */
+    margin-bottom: 70px; /* Bottom margin */
+}
+
+h2 {
+	font-size: 1.6em;
+	font-weight: 700;
+    font-family: 'Pacifico', cursive; 
+}
+
+h1, h3 {
+    font-family: 'Pacifico', cursive;
+    color: #ffb3d9;
+}
+
+ul, ol, li, p {
+    line-height: 2;
+}
+
+form {
+    line-height: 1.5;
+}
+
+form label, form input[type="checkbox"] {
+    display: inline-block;
+    margin-bottom: 10px; 
+}
+
+form input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* NAVIGATION --------- */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    display: block;
+    padding: 10px 40px;
+    text-decoration: none;
+    color: #333; 
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a.nav-link {
+    color: #fff; /* White text color for navigation links */
+    background-color: #ffcce6; /* Light pink background */
+    border-radius: 20px; /* Smooth edges */
+}
+
+nav a.nav-link:hover {
+    background-color: #ffb3d9; /* Slightly darker pink when you hover */
+}
+
+/* Center and style the title Procrastibake */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 3em;
+    color: #ff69b4;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+header h1 a {
+    text-decoration: none;
+    color: inherit; /* Inherit the colour from the parent. I wanted to try this and it worked! 
+    Reference: https://www.w3schools.com/cssref/css_inherit.php */
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    border-radius: 20px;
+}
+
+.instagram-logo img {
+    width: 50px;
+    height: 50px;
+}
+
+ol {
+    text-align: left;
+    font-size: 1.1em;
+    color: #555;
+}
+
+form label {
+    font-size: 1.1em;
+    color: #555;
+}
+
+#wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+nav ul li a {
+    color: #ffb3d9;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #ffcce6;
+    color: white;
+    margin-top: 20px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Just commenting to note that I spelt colour the Australian way every single time :') */
+
+/* CONTENT 1
+----------------------------------------
+*/
+section h2 {
+    text-align: center;
+    color: #ff69b4;
+}
+
+.image-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.image-container {
+    position: relative;
+    max-width: 400px;
+    width: 100%;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.slide-text {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.slide-text a {
+    color: #333;
+    text-decoration: none;
+}
+
+/* CONTENT 2
+----------------------------------------
+*/
+.image-container {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+        display: inline-block;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px; /* Add rounded corners */
+}
+
+.slide-text {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: -30px; /* Adjust positioning on page */
+}
+
+.slide-text a {
+    color: #333;
+    text-decoration: none;
+}
+
+section {
+    text-align: center;
+    margin-bottom: 40px; /* Add space between sections */
+}
+
+/* Makes images have the same height */
+.image-grid .image-container {
+    flex: 1;
+}
+
+.image-grid .image-container img {
+    height: 300px; 
+    object-fit: cover; 
+    border-radius: 20px; /* Add rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+
+/* RECIPE LINKS 
+------------------------- 
+*/
+.slide-text:hover {
+    background-color: #ffb3d9; /* Pink background color on hover */
+}
+
+.slide-text a {
+    color: #333;
+    text-decoration: none;
+}
+
+/* TITLE LINKS ON TOP OF IMAGES 
+--------------------------------------------------
+*/
+nav {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    text-align: center; /* Center the image */
+    width: 100%; /* Ensure the nav takes full width */
+    align-items: center;
+}
+
+nav img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav h2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+/* BREADCRUMBS
+--------------
+*/
+.breadcrumb {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    flex-wrap: wrap;
+    padding: 0.1rem 1rem;
+    margin-bottom: 0.1rem;
+    list-style: none;
+    background-color: #fff9f9; /* Very pale pink background */
+    border-radius: 0.375rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    font-size: 0.875em; /* Smaller font size */
+}
+
+.breadcrumb-item {
+    font-size: 0.875em; /* Ensure consistency in font size */
+    color: #211d1c; /* Same as body text color */
+    display: flex;
+    align-items: center; /* Center items vertically */
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    content: ">";
+    padding: 0 0.5rem;
+    font-weight: bold;
+    color: #ffb3d9; /* Pink separator */
+}
+
+.breadcrumb-item a {
+    text-decoration: none;
+    color: #ff69b4; /* Same color as h2 */
+    transition: color 0.3s ease;
+}
+
+.breadcrumb-item a:hover {
+    color: #ffb3d9; /* Lighter pink on hover */
+}
+
+.breadcrumb-item.active {
+    color: #ffb3d9; /* Light pink for the current page */
+    font-weight: bold;
+}
+
+
+/* MEDIA QUERIES */
+@media (max-width: 1000px) {
+    #wrapper {
+        width: 100%;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }    
+}
+
+@media (max-width: 800px) { 
+    nav ul { 
+        padding-left: 5px; 
+    }
+    footer ul {
+        flex-wrap: wrap;
+    }
+    footer li {
+        padding-bottom: 10px;
+    }
+    form {
+        line-height: 1.5; /* Adjust line spacing for forms */
+    }
+}
+
+@media (max-width: 600px) {
+    #wrapper {
+        width: 100%;
+    }
+    header {
+        height: 200px; 
+    }
+    header img {
+        width: 20%; 
+        height: auto;
+    }
+    nav a {
+        padding: 10px; 
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+h1 {
+    font-size: 5vw; /* Responsive unit that adjusts with viewport width */
+    font-weight: 700;
+}
+
+@media (max-width: 1200px) {
+    h1 {
+        font-size: 4vw; /* Adjust size for large screens */
+    }
+}
+
+@media (max-width: 800px) {
+    h1 {
+        font-size: 6vw; /* Adjust size for medium screens */
+    }
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 8vw; /* Adjust size for small screens */
+    }
+}
+
+@media (max-width: 400px) {
+    h1 {
+        font-size: 10vw; /* Adjust size for extra small screens */
+    }
+}
+
+/* Adjust wrapper width and add padding for smaller screens */
+@media (max-width: 400px) {
+    #wrapper {
+        width: 95%; /* Adjust width to accommodate smaller screens */
+        padding: 10px; 
+    }
+}
+
+/* Some of these are probably doubled up because I combined the week 10 tutorial and chat gbts advice and when I tried to combine it, everything broke */

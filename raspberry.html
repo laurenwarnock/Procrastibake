@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Procrastibake</title>
+    <link rel="icon" href="logo.png" type="image/png">
+    <link rel="stylesheet" href="style.css">    
+    <link rel="icon" href="logo.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<div id="wrapper">
+
+	
+<!-- =========== NAVIGATION ============== -->
+<nav>
+    <ul>
+        <li><a href="recipes.html" class="nav-link">Recipes</a></li>
+    </ul>
+    <header>
+        <h1><a href="index.html">Procrastibake</a></h1>
+    </header>
+    <ul>
+        <li><a href="about.html" class="nav-link">About</a></li>
+    </ul>
+</nav>
+
+<!--
+I learned how to make breadcrumbs through W3 Schools.
+Reference: https://www.w3schools.com/howto/howto_css_breadcrumbs.asp
+-->
+    
+<!-- =========== BREADCRUMB NAVIGATION ============== -->
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="recipes.html">Recipes</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Raspberry White Chocolate Muffins Recipe</li>
+        </ol>
+    </nav>
+    
+    	<!-- ========= CONTENT AREA ============ -->	
+	<article aria-label="article"> 
+		<section>
+			<h2>White Chocolate Raspberry Muffins</h2>
+        <img src="muffin.jpg" alt="White Chocolate Raspberry Muffins" title="White Chocolate Raspberry Muffins" width="800" height="450">
+
+		</section>
+        
+<!--
+I used W3 Schools to learn how to make the checklist.
+Reference: https://www.w3schools.com/tags/att_input_type_checkbox.asp
+-->
+<section>
+    <h2> Baking Time: 30 minutes</h2>
+    <h2>Ingredients</h2>
+<form>
+    <input type="checkbox" id="task1" name="task1">
+    <label for="task1">2 cups self-raising flour</label><br>
+
+    <input type="checkbox" id="task2" name="task2">
+    <label for="task2">1/4 cup caster sugar</label><br>
+
+    <input type="checkbox" id="task3" name="task3">
+    <label for="task3">1 cup brown sugar</label><br>
+
+    <input type="checkbox" id="task4" name="task4">
+    <label for="task4">1/4 brown sugar</label><br>
+
+    <input type="checkbox" id="task5" name="task5">
+    <label for="task5">1 egg</label><br>
+    
+    <input type="checkbox" id="task6" name="task6">
+    <label for="task6">1 lemon's zest</label><br>
+    
+    <input type="checkbox" id="task7" name="task7">
+    <label for="task7">90g melted butter</label><br>
+    
+    <input type="checkbox" id="task8" name="task8">
+    <label for="task8">1/2 cup buttermilk</label><br>
+    
+    <input type="checkbox" id="task9" name="task9">
+    <label for="task9">1/2 cup milk</label><br>
+    
+    <input type="checkbox" id="task10" name="task10"><label for="task10">1/2 cup white choc chips</label><br>
+    
+    <input type="checkbox" id="task11" name="task11"><label for="task11">150g frozen raspberries</label><br>
+</form>
+
+
+</section>
+		
+		
+		<section>
+        <h2>Steps</h2>
+        <ol>
+            <li>Preheat oven to 180°C and grease a muffin tin with butter or spray oil.</li>
+            
+            <li>Sift flour into a large bowl and stir in the sugars to mix evenly.</li>
+            
+            <li>In another bowl mix together the egg, lemon zest, butter, buttermilk and choc chips and add flour mixture with the raspberries.</li>
+            
+            <li>Spoon into muffin tin and bake for 20 minutes or until golden.</li>
+            
+            <li>Remove from oven and allow to cool for a few minutes before turning out onto a wire rack to cool completely.</li>
+        </ol>
+        </section>
+			
+	</article>
+    
+    <!-- ============= FOOTER ================ -->
+    <footer>
+		<address>
+			Contact us at: <a href="mailto:cooking@procrastibake.com">cooking@procrastibake.com</a>
+		</address>
+	</footer>
+    
+</div>
+</body>
+</html>

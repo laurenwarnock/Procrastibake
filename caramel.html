@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Procrastibake</title>
+    <link rel="icon" href="logo.png" type="image/png">
+    <link rel="stylesheet" href="style.css">    
+    <link rel="icon" href="logo.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+    
+<body>
+<div id="wrapper">
+
+	
+<!-- =========== NAVIGATION ============== -->
+<nav>
+    <ul>
+        <li><a href="recipes.html" class="nav-link">Recipes</a></li>
+    </ul>
+    <header>
+        <h1><a href="index.html">Procrastibake</a></h1>
+    </header>
+    <ul>
+        <li><a href="about.html" class="nav-link">About</a></li>
+    </ul>
+</nav>
+
+    <!--
+I learned how to make breadcrumbs through W3 Schools.
+Reference: https://www.w3schools.com/howto/howto_css_breadcrumbs.asp
+-->
+
+<!-- =========== BREADCRUMB NAVIGATION ============== -->
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="recipes.html">Recipes</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Caramel Slice Recipe</li>
+        </ol>
+    </nav>
+    
+    	<!-- ========= CONTENT AREA ============ -->	
+	<article aria-label="article"> 
+		<section>
+			<h2>Caramel Slice</h2>
+<img src="slice.jpg" alt="Caramel Slice" title="Caramel Slice" width="800" height="450">
+		</section>
+        
+        <!--
+I used W3 Schools to learn how to make the checklist.
+Reference: https://www.w3schools.com/tags/att_input_type_checkbox.asp
+-->
+<section>
+    <h2> Baking Time: One hour</h2>		
+    <h2>Ingredients</h2>
+<form>
+<h3>Base</h3>
+    <input type="checkbox" id="task1" name="task1">
+    <label for="task1">1 cup self-raising flour</label><br>
+
+    <input type="checkbox" id="task2" name="task2">
+    <label for="task2">1 cup brown sugar</label><br>
+
+    <input type="checkbox" id="task3" name="task3">
+    <label for="task3">1 cup desiccated coconut</label><br>
+
+    <input type="checkbox" id="task4" name="task4">
+    <label for="task4">125g butter</label><br>
+<h3>Filling</h3>
+    <input type="checkbox" id="task5" name="task5">
+    <label for="task5">2 x 395g cans sweetened condensed milk</label><br>
+    
+    <input type="checkbox" id="task6" name="task6">
+    <label for="task6">100g unsalted butter, chopped</label><br>
+    
+    <input type="checkbox" id="task7" name="task7">
+    <label for="task7">1/3 cup golden syrup</label><br>
+    
+    <input type="checkbox" id="task8" name="task8">
+    <label for="task8">1 tsp sea salt flakes</label><br>
+    
+    <input type="checkbox" id="task9" name="task9">
+    <label for="task9">200g block dark cooking chocolate</label><br>
+</form>
+
+</section>
+		
+		
+
+		
+        <section>
+        <h2>Steps</h2>
+        <h3>Base</h3>
+        <ol>
+            <li>Preheat oven to 180°C.</li> 
+            
+            <li>Sift flour into bowl, add sugar and coconut, stir until combined.</li>
+            
+            <li>Melt butter, add dry to ingredients; mix well.</li>
+            
+            <li>Press into greased 28cm x 18cm baking pan.</li>
+            
+            <li>Bake for 10 minutes.</li>
+        </ol>
+            
+            <h3>Filling</h3>
+        <ol>   
+            <li>Combine condensed milk, butter and golden syrup in a medium saucepan.</li>
+                       
+            <li>Stir over a low heat until butter is melted.</li>
+                       
+            <li>Increase to medium heat and stir constantly for about 8 to 10 minutes, or until mixture boils and turns light golden.</li>
+                       
+            <li>Pour hot filling over biscuit base and return to oven for 10 minutes.</li>
+                       
+            <li>Melt chocolate and pour over filling. Sprinkle with salt.</li>
+            
+            <li>Refrigerate for at least 6 hours.</li>
+            
+            
+        </ol>
+        </section>	
+	</article>
+    
+    <!-- ============= FOOTER ================ -->
+    <footer>
+		<address>
+			Contact us at: <a href="mailto:cooking@procrastibake.com">cooking@procrastibake.com</a>
+		</address>
+	</footer>
+    
+</div>
+</body>
+</html>
